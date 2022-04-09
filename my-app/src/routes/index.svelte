@@ -4,6 +4,10 @@
 
 <script lang="ts">
 	import Counter from '$lib/Counter.svelte';
+
+	import sizes from 'open-props/src/sizes';
+	// TS says "Cannot find module 'open-props/src/sizes' or its corresponding type declarations"
+	console.log('I can still print out sizes from open-props/src/sizes:', sizes);
 </script>
 
 <svelte:head>
