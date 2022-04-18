@@ -11,3 +11,5 @@ npm install open-props
 npm run dev
 # http://localhost:3000/
 ```
+
+Use an IDE like VSCode to test out auto-complete in /my-app/src/routes/index.svelte
