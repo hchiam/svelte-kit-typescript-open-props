@@ -5,16 +5,16 @@
 <script lang="ts">
 	import Counter from '$lib/Counter.svelte';
 
-	// import sizes from 'open-props/src/sizes'; // Cannot find module 'open-props/src/sizes' or its corresponding type declarations.ts(2307)
-	// console.log('I can still print out sizes from open-props/src/sizes:', sizes);
+	import op, {animations} from 'open-props'
+	op['--animation-blink']
+	op.animationBlink // TODO: this works in autocomplete.test.ts but not here
 
-	import op from 'open-props/src' // No error! :)
-	op['--animation-blink'] // auto-complete works too :)
-	op.animationBlink // auto-complete on camelCase works too :)
+	op['--animation-slide-in-down-@']
+	op.animationSlideInDownAt // TODO: this works in autocomplete.test.ts but not here
 
-	// TODO: update ['--aaa-bbb-@'] --> .aaaBbbAt
-	op.animationFadeInAt
-	op['animationBlink@'] // should be animationBlinkAt
+	import sizes from 'open-props/src/sizes'
+	sizes['--size-1']
+	sizes.size1 // this already works here! :)
 </script>
 
 <svelte:head>
