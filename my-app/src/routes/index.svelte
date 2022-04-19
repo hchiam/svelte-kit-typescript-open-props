@@ -6,11 +6,10 @@
 	import Counter from '$lib/Counter.svelte';
 
 	// import sizes from 'open-props/src/sizes'; // Cannot find module 'open-props/src/sizes' or its corresponding type declarations.ts(2307)
-	import sizes from 'open-props/src' // No error! :) and autocomplete works too
-	import op from 'open-props/src' // Also no error! :) and autocomplete works too
+	// console.log('I can still print out sizes from open-props/src/sizes:', sizes);
 
-	// TS says "Cannot find module 'open-props/src/sizes' or its corresponding type declarations"
-	console.log('I can still print out sizes from open-props/src/sizes:', sizes);
+	import op from 'open-props/src' // No error! :)
+	op['--animation-blink'] // auto-complete works too :)
 </script>
 
 <svelte:head>
