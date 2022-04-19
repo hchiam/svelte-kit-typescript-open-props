@@ -10,6 +10,11 @@
 
 	import op from 'open-props/src' // No error! :)
 	op['--animation-blink'] // auto-complete works too :)
+	op.animationBlink // auto-complete on camelCase works too :)
+
+	// TODO: update ['--aaa-bbb-@'] --> .aaaBbbAt
+	op.animationFadeInAt
+	op['animationBlink@'] // should be animationBlinkAt
 </script>
 
 <svelte:head>
