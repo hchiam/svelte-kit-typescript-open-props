@@ -7,10 +7,10 @@
 
 	import op, {animations} from 'open-props'
 	op['--animation-blink']
-	op.animationBlink // TODO: this works in autocomplete.test.ts but not here
+	op.animationBlink
 
 	op['--animation-slide-in-down-@']
-	op.animationSlideInDownAt // TODO: this works in autocomplete.test.ts but not here
+	op.animationSlideInDownAt
 
 	import sizes from 'open-props/src/sizes'
 	sizes['--size-1']
